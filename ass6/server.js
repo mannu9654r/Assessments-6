@@ -6,8 +6,7 @@ const fs = require("fs");
 const path = require("path");
 
 // Port number
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
 // Function to serve HTML pages asynchronously
 function servePage(res, fileName, statusCode = 200) {
 
